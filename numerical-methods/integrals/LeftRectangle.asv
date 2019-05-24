@@ -1,0 +1,28 @@
+function [ Int ] = LeftRectangle( a,b,e)
+    n = 2;
+    h = (a+b)/n;
+    Old_Int = 0;
+    X = [];
+    Y = [];
+    while (1)
+        S = 0;
+        for k = 1:n
+           x = a + (k-1)*h;
+           S = S + f(x);
+        end
+        Int = S*h;
+        if (abs(Int - Old_Int) < e)
+            break;
+        else
+            n = n*2;
+            h = h/2;
+            Old_Int = Int;
+        end
+    end
+    X = a:h:b;
+    Y = f(X);
+    hold on;
+    bar(X,Y);
+    plot
+end
+

@@ -1,0 +1,475 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    min-width: 1040px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header{
+    background-color: #6451d5;
+    padding-top: 35px;
+    padding-bottom: 100px;
+}
+
+.container{
+    width: 1020px;
+    margin: 0 auto;
+    padding:0 30px;
+}
+
+.header-top{
+    margin-bottom: 95px;
+}
+
+.header-top::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo{
+    float: left;
+    width:182px;
+    height: 81px;
+}
+
+.main-menu{
+    float: right;
+    width: 700px;
+    margin-top: 30px;
+}
+
+.promo{
+    width: 425px;
+    position: relative;
+    z-index: 10;
+}
+
+.main-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: 0;
+}
+
+.main-menu li{
+    display: inline-block;
+    margin-right:55px;
+    vertical-align: top;
+}
+
+.main-menu li:last-child{
+    margin-right:0;
+}
+
+.main-menu a{
+    font-family: Trebuchet MS;
+    font-size:18px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 24px;
+    color: white;
+}
+
+.main-menu a:hover {
+  text-decoration: underline;
+}
+
+.main-menu a:active {
+  text-decoration: none;
+  opacity: 0.3;
+}
+
+.promo-title{
+    font-family: Trebuchet MS;
+    font-size:45px;
+    font-weight: bold;
+    line-height: 50px;
+    color:white;
+    margin-bottom: 30px;
+}
+
+.promo p{
+    width: 380px;
+    font-family: Tahoma;
+    font-size: 18px;
+    line-height: 30px;
+    color: #bcb3f2;
+    margin-bottom: 50px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 25px 80px;
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    vertical-align: top;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #382d78;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.bth:hover{
+    background-color: #32286c;
+}
+
+.btn:active{
+    background-color: #32286c;
+    opacity: 0.3;
+}
+
+.promo::after{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: -30px;
+    left:380px;
+    width: 650px;
+    height: 450px;
+    background: url("../img/bg-promo.png") no-repeat;
+}
+
+.features{
+    background-color: #efefef;
+    padding-top: 50px;
+    padding-bottom: 45px;
+}
+
+.features-item{
+    width: 320px;
+    float:left;
+    margin-right:30px;
+}
+
+.features-item:last-child{
+    margin-right: 0;
+}
+
+.features .container::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.features-title{
+    margin: 0;
+    font-family: "Trebuchet MS";
+    font-size: 22px;
+    text-align: center;
+    color: #000000;
+}
+
+.features-item p{
+    font-family: "Trebuchet MS";
+    font-size: 18px;
+    text-align: center;
+    color: #555555;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.features-icon{
+    display: inline-block;
+    margin-left: 132px;
+    margin-bottom: 15px;
+}
+
+.features-icon-timetable{
+    background: url("../img/icon-timetable.png") no-repeat;
+    background-position: 0 0;
+    width: 73px;
+    height:68px;
+}
+
+.features-icon-practice{
+    background: url("../img/icon-practice.png") no-repeat;
+    background-position: -2px 0;
+    width: 73px;
+    height:68px;
+}
+
+.features-icon-work{
+    background: url("../img/icon-work.png") no-repeat;
+    background-position: -2px 0;
+    width: 73px;
+    height:68px;
+}
+
+.education{
+    background: white;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.education h2{
+    padding: 0;
+}
+
+.education-title{
+    font-family: "Trebuchet MS";
+    font-size:45px;
+    line-height: 50px;
+    color:black;
+    margin-bottom: 60px;
+    margin-top: 0;
+}
+
+.education table{
+    border-collapse:collapse;
+    padding: 0;
+    margin: 0;
+}
+
+.education td{
+    border: 2px solid #a7a7a7;
+    line-height: 30px;
+    color: #404040;
+    font-family: "Tahoma";
+    font-size: 18px;
+    padding-top:20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    vertical-align: top;
+}
+
+.education .main-row td{
+    font-style: "Tahoma";
+    font-size: 18px;
+    color: #404040;
+    background: #efefef;
+    padding-bottom: 20px;
+}
+
+.education td strong{
+    font-style: "Trebuchet MS";
+    font-size: 22px;
+    color: black;
+    line-height: 30px;
+}
+
+.education .col1{
+    width: 232px;
+    padding-right: 25px;
+}
+
+.education .col2{
+    width: 158px;
+}
+
+.education .col3{
+    width: 472px;
+    padding-right: 40px;
+}
+
+.contacts{
+    background: #efefef;
+    padding-top:50px;
+    padding-bottom:75px;
+}
+
+.contacts .container{
+    position: relative;
+}
+
+.contacts h2,h3{
+    margin: 0;
+}
+
+.contacts-title {
+    font-family: "Trebuchet MS";
+    font-size:45px;
+    line-height: 50px;
+    color:black;
+}
+
+.contacts-form{
+    position: absolute;
+    margin-top: 57px;
+    float:left;
+    width:650px;
+    left: 15px;
+}
+
+.contacts-form .fullname td{
+    padding-bottom:20px;
+}
+
+.contacts-form .sex td{
+    padding-bottom:25px;
+}
+
+.contacts-form .message td{
+    padding-bottom:20px;
+}
+
+.contacts-form .title{
+    width:105px;
+    padding-right: 10px;
+    font-family: "Trebuchet MS";
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+    font-size:18px;
+}
+
+.contacts-form .title:nth-child(odd){
+    padding-top: 15px;
+}
+
+.contacts-form .field {
+      width: 530px;
+      font-family: "Tahoma";
+      font-size: 18px;
+}
+
+.contacts-form input[type="text"],
+.contacts-form textarea {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 15px 25px;
+  outline: none;
+  font-family: "Tahoma";
+  font-size: 18px;
+  border: 2px solid #b2b2b2;
+}
+
+.contacts-form input[type="text"]:hover,
+.contacts-form textarea:hover {
+  border: 2px solid #2c2c2c;
+}
+
+.contacts-form input[type="text"]:focus,
+.contacts-form textarea:focus {
+  border: 2px solid #180775;
+}
+
+.contacts-form textarea {
+  min-height: 105px;
+  resize: none;
+}
+
+.btn-bottom{
+    width:100%;
+}
+
+.contacts-instruction{
+    margin-top: 60px;
+    float:right;
+    width:320px;
+    margin-bottom: 20px;
+}
+
+.contacts h3{
+    font-family: "Trebuchet MS";
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+.contacts .contacts-instruction p{
+    font-family: "Tahoma";
+    font-size: 18px;
+    line-height: 24px;
+    color: #555555;
+    margin: 0;
+    margin-bottom: 25px;
+    width:
+}
+
+.contacts .contacts-instruction p strong{
+    color: black;
+}
+.contacts .contacts-instruction p:last-child{
+    margin-bottom: 0;
+    margin-top: 40px;
+}
+
+.contacts .container::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-footer h3{
+    margin: 0;
+    padding: 0;
+}
+
+.main-footer{
+    background: #2a2546;
+    padding-top:70px;
+    padding-bottom:90px;
+    color: white;
+    font-family: "Tahoma";
+    font-size:19px;
+}
+
+.footer-address{
+    float: left;
+    width: 320px;
+    margin-right: 15px;
+}
+
+.footer-address p{
+    margin-top:75px;
+}
+
+.footer-top::after{
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.footer-logo{
+    float: none;
+}
+
+.footer-menu{
+    float:left;
+    margin-top:25px;
+    width:170px;
+}
+
+.footer-menu:last-child{
+    float: right;
+}
+
+.footer-menu h3{
+    padding:0;
+    margin: 0;
+    text-align: center;
+}
+.footer-menu ul{
+    list-style: none;
+}
+
+.footer-menu ul li{
+    padding: 15px 0px;
+}
+
+.footer-menu li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #bcb3f2;
+}
+
+.footer-menu li a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.footer-menu li a:active{
+    text-decoration: none;
+    opacity: 0.3;
+}

@@ -1,0 +1,30 @@
+function [ int ] = Monte_Carlo(a, b)
+    x = linspace(a,b,100);
+    y = f1(x);
+    n = 1000;
+    count_right = 0;
+    hold on;
+    
+    maxy = max(y);
+    miny = min(y);
+    h = abs(maxy - miny);
+    S = (b - a)*h;
+    
+    X = a + (b-a)*rand(1,n);
+    Y = miny + (maxy - miny)*rand(1,n);
+    %mas = [xi,yi];
+    for k = 1:n
+        if (abs(Y(k)) < abs(f1(X(k))))
+            plot(X(k),Y(k),'g');
+            count_right = count_right + 1;
+    else
+        plot(X(k),Y(k),'r');
+    end
+    plot(x,f1(x));
+    
+    for i= 1:n
+        s = s + 
+
+
+end
+

@@ -1,0 +1,47 @@
+function [ int ] = Three_8( a,b,eps )
+    n = 3;
+    old_int = 0;
+    h = (b-a)/n;
+    while (1)
+        s = 0;
+        for k = 1:n-1
+            x = a + k.*n;
+            if (x == 0)
+                x=x+0.0001;
+            end
+            if ( mod(k,3) == 0)
+                s = s + 2 .* f(x);
+            else
+                s = s + 3 .* f(x);
+            end
+        end
+        int = (f(a)+f(b) + s).*h.*3./8;
+        if (abs(int - old_int) < eps)
+            break
+        else
+            old_int = int;
+            n = n.*3;
+            h = h./3;
+        end
+    end
+
+    fprintf('Количество разбиений n=%d\n', n);
+    fprintf('Шаг интегрирования h=%d\n', h);
+    fprintf('Интеграл S=%f.12\n', integr);
+
+X=a:0.001:b;
+plot(X, f1(X), 'r');
+hold on;
+
+for i=a:h:b-h
+    xx=linspace(i, i+h, 100);
+    x=[i, i+h/3, i+h*2/3, i+h];
+    y=f1(x);
+    xx_poly=polyfit(x, y, 3);
+    yy = polyval(xx_poly, xx);
+    hold on;
+    area(xx, yy, 'FaceColor', [rand 0 rand]);
+end
+
+end
+
