@@ -4,7 +4,7 @@ languages: C, MatLab, HTML/CSS
  
 ## Content
  
- * **Dynamic structures {C}** Topics: 
+ * **Data structures {C}** Topics: 
  `1. Structure` 
  `2. Linked list` 
  `3. Queue`
