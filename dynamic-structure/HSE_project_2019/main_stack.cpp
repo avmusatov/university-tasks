@@ -50,7 +50,7 @@
 //int main(void) {
 //	FILE * f_in = fopen("stack_in.txt", "rt");
 //	FILE * f_out = fopen("stack_out.txt", "wt");
-//	char buffer[128];
+//	char buffer[128], tmpChar;
 //	CharNode *phead = NULL, *tmp_phead = NULL;
 //	int len,endf;
 //
@@ -70,9 +70,8 @@
 //		for (int i = 0; i < len; i++)
 //			push(&phead, buffer[i]);
 //		for (int i = 0; i < len; i++) {
-//			tmp_phead = pop(&phead);
-//			fputc(tmp_phead->value, f_out);
-//			free(tmp_phead);
+//			tmpChar = pop(&phead)->value;
+//			fputc(tmpChar, f_out);
 //		}
 //		endf = fgetc(f_in);
 //	} while (endf != EOF);
@@ -81,7 +80,7 @@
 //	fclose(f_out);
 //}
 
-//
+
 //int main(void) {
 //	int len;
 //	char s[128];

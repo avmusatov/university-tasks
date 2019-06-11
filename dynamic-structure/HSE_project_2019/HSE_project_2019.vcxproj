@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="lists.cpp" />
+    <ClCompile Include="main_intopost.cpp" />
     <ClCompile Include="main_lists.cpp" />
     <ClCompile Include="main_stack.cpp" />
     <ClCompile Include="main_structures.cpp" />

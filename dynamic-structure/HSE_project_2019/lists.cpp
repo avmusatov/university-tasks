@@ -484,3 +484,51 @@ void postOrderTravers(TreeNode* root, void(*visit)(TreeNode*, void*), void *para
 void print_TreeNode(TreeNode *current, void *args) {
 	printf("%d ", current->data);
 }
+
+//Convert infix to postfix expression
+void infix_to_postfix(char *s, int len)
+{
+	CharNode *opStack = NULL;
+	CharNode *resStack = NULL;
+	char tmp,topElem, tmpStr[128],tmpElem;
+
+	for (int i = 0; i < len; i++) {
+		tmp = s[i];
+		if ((int)'1' <= (int)tmp && (int)tmp <= (int)'9') {
+			push(&resStack, tmp);
+		}
+		else if ((int)tmp == (int)'(') {
+			push(&opStack, tmp);
+		}
+		else if ((int)tmp == (int)')') {
+			topElem = pop(&opStack)->value;
+			while ((int)topElem != (int)'(') {
+				push(&resStack, topElem);
+				topElem = pop(&opStack)->value;
+			}
+		}
+		else {
+			while (IsEmpty(opStack) == false && precedence(tmp) <= precedence(peek(opStack))) {
+				tmpElem = pop(&opStack)->value;
+				push(&resStack, tmpElem);
+			}
+			push(&opStack, tmp);
+		}
+	}
+	printStack(resStack);
+}
+
+int precedence(char tmp) {
+	switch (tmp) {
+	case '*':
+		return 3;
+	case '/':
+		return 3;
+	case '+':
+		return 2;
+	case '-':
+		return 2;
+	default:
+		return 1;
+	}
+}

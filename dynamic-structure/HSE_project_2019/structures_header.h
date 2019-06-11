@@ -80,4 +80,7 @@ void inOrderTravers(TreeNode* root, void(*visit)(TreeNode*, void*), void *params
 void postOrderTravers(TreeNode* root, void(*visit)(TreeNode*, void*), void *params);
 void print_TreeNode(TreeNode *current, void *args);
 
+int precedence(char tmp);
+void infix_to_postfix(char *s, int len);
+
 #endif

@@ -1,0 +1,4 @@
+﻿  functions.cpp
+d:\hse studying\university-tasks\postfix-calculator\postfix-calculator\functions.cpp(89): warning C4172: возвращение адреса локальной или временной переменной : resStr
+d:\hse studying\university-tasks\postfix-calculator\postfix-calculator\functions.cpp(137): warning C4715: doMath: значение возвращается не при всех путях выполнения
+  postfix-calculator.vcxproj -> D:\HSE Studying\university-tasks\postfix-calculator\Debug\postfix-calculator.exe
